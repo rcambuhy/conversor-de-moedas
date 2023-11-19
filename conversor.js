@@ -5,10 +5,12 @@ var valorEmReal = document.getElementById('valorEmReal');
 var cotaçãoDolar = 5.32;
 var valorEmRealResult = valorEmDolar.value * cotaçãoDolar;
 
-valorEmRealResult = valorEmRealResult.toFixed(2).replace('.', ',');
+valorEmRealResult = valorEmRealResult.toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+}).split("R$")[1].trim();
 
-  // Add the text "USD" to the beginning of the value of the input
-valorEmDolar.value = valorEmDolar.value
+valorEmDolar.value = valorEmDolar.value;
 
 valorEmReal.value = "BRL " + valorEmRealResult;
 
