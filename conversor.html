@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./conversor.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+        Conversor de moedas
+        </h1>
+    </div>
+    <a href="#" target="#">
+        <img src="./Conversor.png">
+    </a>
+    <div class="retangulo"></div>
+    <div class="conversor">
+        <form>
+            <input id="valorEmDolar" type="text" placeholder="USD">
+            <input id="valorEmReal" type="text" placeholder="BRL" readonly >
+            <div id="buttons">
+                <button type="button" onclick="calcularConversao()">Calcular</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+</html>

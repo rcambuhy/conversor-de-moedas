@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+    text-align: center;
+    background-image: url("./Finanças.webp");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+form,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+body > img {
+    margin: 0 10px;
+}
+
+img {
+    max-height: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form input {
+    display: flex;
+    font-size: 15px;
+    height: 40px;
+    width: 300px;
+    margin-top: 6px;
+    }
+
+.retangulo {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    width: 30%;
+    height: 65%;
+    background-color: #00000080;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+button {
+    margin-top: 8px;
+    cursor: pointer;
+    height: 32px;
+    width: 130px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #00000065;
+    color: #fff;
+}
+
+.buttons {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #00000099;
+}
